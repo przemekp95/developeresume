@@ -3,6 +3,101 @@ import { IData } from '@/types';
 
 const userData: IData = {
 	header: {
+		name: 'Przemysław Pietrzak',
+		phoneNumber: '+48664616582',
+		location: 'Warszawa, Polska',
+		email: 'p.pietrzak@sluzbaniepodleglej.pl',
+		linkedIn: 'linkedin.com/in/przemyslaw-pietrzak/',
+		github: 'github.com/przemekp95'
+	},
+	education: [
+		// Brak informacji o edukacji w przesłanym CV – możesz dodać, jeśli chcesz
+	],
+	skills: [
+		{
+			id: uuidv4(),
+			name: 'Backend / Programowanie',
+			skill: ['Python', 'SQL', 'PHP', 'Bash']
+		},
+		{
+			id: uuidv4(),
+			name: 'Frontend',
+			skill: ['HTML5', 'CSS3', 'JavaScript']
+		},
+		{
+			id: uuidv4(),
+			name: 'CMS i frameworki webowe',
+			skill: ['WordPress', 'OJS/OMP', 'OwnCloud', 'Laravel', 'Blade']
+		},
+		{
+			id: uuidv4(),
+			name: 'DevOps / Infrastruktura',
+			skill: ['Linux', 'konfiguracja VPS', 'Git', 'Docker']
+		},
+		{
+			id: uuidv4(),
+			name: 'Automatyzacja i narzędzia',
+			skill: ['Web scraping', 'SEO', 'PhpMyAdmin', 'VS Code']
+		},
+		{
+			id: uuidv4(),
+			name: 'Języki obce',
+			skill: ['Angielski', 'Niemiecki', 'Hiszpański']
+		}
+	],
+	experience: [
+		{
+			id: uuidv4(),
+			designation: 'Web Developer',
+			company: 'Centrum Analiz Służby Niepodległej',
+			location: 'Warszawa, Polska',
+			duration: '2024 - ongoing',
+			tasks: [
+				'Stworzenie aplikacji webowej w frameworku Laravel dla CASN, wdrożenie routingu, responsywnego frontu (Blade), deploy na hosting.',
+				'Optymalizacja SEO oraz konfiguracja repozytorium Git.'
+			]
+		},
+		{
+			id: uuidv4(),
+			designation: 'Administrator i Developer',
+			company: 'Fundacja Służba Niepodległej',
+			location: 'Warszawa, Polska',
+			duration: '2023 - ongoing',
+			tasks: [
+				'Administrowanie i rozwój strony fundacji opartej na WordPress.',
+				'Wdrażanie nowych podstron oraz strategii treści SEO.'
+			]
+		}
+	],
+	projects: [
+		{
+			id: uuidv4(),
+			name: 'Mazowieści',
+			desc: 'Migracja i utrzymanie serwisu informacyjnego z WIX do WordPress. Automatyzacja ekstrakcji artykułów w Python (Scrapy), import treści do bazy WP, optymalizacja SEO i szybkości działania.'
+		},
+		{
+			id: uuidv4(),
+			name: 'Aplikacja mobilna konferencji',
+			desc: 'Dwujęzyczna aplikacja mobilna w języku Java na Androida dla uczestników międzynarodowej konferencji, z materiałami konferencyjnymi i pełnym cyklem wytwarzania.'
+		}
+	],
+	accomplishments: [ /*
+		'Autor wielu projektów open-source (m.in. automatyzacja, integracje API, skrypty SEO).',
+		'Udział w projektach NGO oraz komercyjnych z wykorzystaniem Laravel, Python i WordPress.' */
+	]
+};
+
+export default userData;
+
+
+/*
+
+
+import { v4 as uuidv4 } from 'uuid';
+import { IData } from '@/types';
+
+const userData: IData = {
+	header: {
 		name: 'Muhammad Saad',
 		phoneNumber: '+490000000000',
 		location: 'Berlin, Germany',
@@ -120,3 +215,4 @@ const userData: IData = {
 };
 
 export default userData;
+*/
